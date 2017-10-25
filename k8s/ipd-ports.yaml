@@ -1,0 +1,16 @@
+---
+# this file contains port definition for OCS container. this definition is also used for exposing ports as a service
+
+ports:
+  - containerPort: 22
+    name: ipd-ssh
+    protocol: TCP
+  - containerPort: 3868
+    name: ipd-diameter
+    protocol: TCP
+  - containerPort: 9997
+    name: ipd-tmaf
+    protocol: TCP
+  - containerPort: 9881
+    name: ipd-https
+    protocol: TCP
